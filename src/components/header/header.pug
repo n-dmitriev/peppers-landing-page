@@ -3,6 +3,13 @@ mixin header()
         .header__logo
         .header__bar
             .header__number +7 (495) 662 76 77
-            .v-line
+            +vLine()
             .header__switch-lang
+                select(name="langSwitch")
+                     each val in langList
+                        -if(val.name===currentLanguage)
+                            option(value=val.name selected)=val.name
+                        -else
+                            option(value=val.name)=val.name
     block
+    

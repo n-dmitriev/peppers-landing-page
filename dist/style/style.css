@@ -66,18 +66,18 @@
 /**
  * номер телефона компании
  */
-.HEADER-NUMBER {
+.HEADER-NUMBER, .header__number {
   font-family: "Futura New Light";
   font-size: 32px;
 }
 @media screen and (max-width: 1599px) {
-  .HEADER-NUMBER {
+  .HEADER-NUMBER, .header__number {
     font-size: 32px;
     line-height: 0.844;
   }
 }
 @media screen and (min-width: 1600px) {
-  .HEADER-NUMBER {
+  .HEADER-NUMBER, .header__number {
     font-size: 32px;
     line-height: 0.844;
   }
@@ -86,18 +86,18 @@
 /**
  * шрифт отвечающий за смену языка и пункт меню
  */
-.HEADER-MENU {
+.HEADER-MENU, .header__switch-lang {
   font-family: "Futura New Book";
   font-size: 24px;
 }
 @media screen and (max-width: 1599px) {
-  .HEADER-MENU {
+  .HEADER-MENU, .header__switch-lang {
     font-size: 24px;
     line-height: 1.125;
   }
 }
 @media screen and (min-width: 1600px) {
-  .HEADER-MENU {
+  .HEADER-MENU, .header__switch-lang {
     font-size: 21px;
     line-height: 1.286;
   }
@@ -209,8 +209,35 @@
   background-color: #f9f8f6;
 }
 
+.header {
+  display: flex;
+  margin: 10px;
+}
 .header__logo {
   background: url("../images/logo.svg");
   width: 243px;
   height: 79px;
+}
+.header__bar {
+  display: flex;
+  margin-left: auto;
+  flex-direction: row;
+}
+.header__switch-lang select {
+  display: block;
+  padding: 0.6em 1.4em 0.5em 0.8em;
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  outline-offset: 0;
+  background-color: #f9f8f6;
+}
+
+.v-line {
+  background-color: #4c3440;
+  opacity: 0.502;
+  margin: 0 20px;
+  top: 71px;
+  width: 2px;
+  height: 30px;
 }
