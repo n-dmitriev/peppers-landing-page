@@ -3,9 +3,12 @@ mixin page(currentPage)
         img.page__image(src=currentPage.img)
         .page__content
             h1.page__title=currentPage.title
+            if currentPage.text
                 each val in currentPage.text
                     +renderText(val)
-               
+    block
+
+//-Рендерим блоки текста
 mixin renderText(val)
     .page__text
         p=val

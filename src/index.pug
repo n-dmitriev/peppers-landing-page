@@ -1,10 +1,4 @@
-include ../build/build.pug
+extend ./components/pageTemplate.pug
 
-html
-    head
-    body
-        +layout("layout")
-            +header("head")
-            +page(pageContents["save_and_multiply"])
-            +navbar("save_and_multiply")
-                
+append vars
+    - var currentPage = "save_and_multiply";

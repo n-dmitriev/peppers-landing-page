@@ -1,0 +1,17 @@
+include ../../build/build.pug
+
+block vars
+    - var currentPage="defaultPage";
+
+html
+    head
+
+    body
+        +layout("layout")
+            
+            +header()
+            
+            block content
+                +page(pageContents[currentPage])
+            
+            +navbar("save_and_multiply")

@@ -14,10 +14,11 @@ mixin navbar(currentPage)
                 button.btn-donwoald Скачать "услуги PWR"
             .navbar_about
                 2009-20017
+    block
 
-//- 
+//- Рендерим список страниц
 mixin renderList(val,currentPage)
     -if(val.isSeparator === true)
         li #[div.h-line]
     -else
-        li(class=(val.id==currentPage ? "active-item" : ""))= val.title
+        li(class=(val.id==currentPage ? "active-item" : "")) #[a(href=val.href)= val.title]
