@@ -3,29 +3,8 @@ include ../build/build.pug
 html
     head
     body
-        h1=testVar
-        .layout
-            head.header
-                .header__logo
-                .header__bar
-                    .header__number
-                    .v-line
-                    .header__switch-lang
-            .page
-                .page__image
-                .page__content
-                    .page__title
-                        h1 Сохранить и преумножить
-                    .page__text
-                        p.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            Sint eligendi ad, dolore quo hic sapiente perferendis delectus, 
-                            animi commodi quidem totam quod beatae, maiores ex eos! Minima nam ducimus aliquid!
-                    .page__text
-                        p.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi 
-                            voluptatem doloremque quasi commodi deserunt fugit ad, nam qui 
-                            incidunt ducimus nobis asperiores saepe, accusantium architecto 
-                            voluptates perspiciatis possimus non nihil?
+        +layout("layout")
+            +header("head")
+            +page(pageContents["save_and_multiply"])
             +navbar("save_and_multiply")
                 

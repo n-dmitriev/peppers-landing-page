@@ -1,0 +1,11 @@
+mixin page(currentPage)
+    .page
+        img.page__image(src=currentPage.img)
+        .page__content
+            h1.page__title=currentPage.title
+                each val in currentPage.text
+                    +renderText(val)
+               
+mixin renderText(val)
+    .page__text
+        p=val

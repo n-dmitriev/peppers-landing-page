@@ -1,10 +1,10 @@
-mixin navbar()
+mixin navbar(currentPage)
     nav.navbar
         .navbar__menu
             .navbar__links
                 ul
-                    li Сохранить и преумножить
-                    li #[div.h-line]
+                  each val in menuItems
+                    +renderList(val,currentPage)
             .navbar__container
                 button.btn Raffeisen-Online
                 button.btn_light R-Dealler
@@ -14,4 +14,10 @@ mixin navbar()
                 button.btn-donwoald Скачать "услуги PWR"
             .navbar_about
                 2009-20017
-    block
+
+//- 
+mixin renderList(val,currentPage)
+    -if(val.isSeparator === true)
+        li #[div.h-line]
+    -else
+        li(class=(val.id==currentPage ? "active-item" : ""))= val.title

@@ -1,14 +1,35 @@
 -
-    var menuItems = [
-        {title: "Сохранить и преумножить"},
-        {title: "Пункт 2"},
-        {isSeparator: true}
+   
+
+    var pageContents = 
+    {
+        save_and_multiply:{
+            type: "simplePage",
+            title: "Сохранить и преумножить",
+            img: "",
+            text: [
+                "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint eligendi ad, dolore quo hic sapiente perferendis delectus, animi commodi quidem totam quod beatae, maiores ex eos! Minima nam ducimus aliquid!",
+                "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint eligendi ad, dolore quo hic sapiente perferendis delectus, animi commodi quidem totam quod beatae, maiores ex eos! Minima nam ducimus aliquid!",
+            ]
+        }
+    };
+
+     var menuItems = [
+        {title: pageContents["save_and_multiply"].title, href: '#save_and_multiply', id: "save_and_multiply"},
+        {title: "Получить финансирование"},
+        {title: "Решение для вашего бизнеса"},
+        {title: "Расчётно-кассовое обслуживание"},
+        {title: "Решение для вашей семьи/Консалтинг"},
+        {isSeparator: true},
+        {title: "О нас"},
+        {title: "Контактная информация"},
     ];
-    var testVar = "test!!!";
+    
+    
 
     /* TODO:
-        - генерация пунктов в миксине меню из списка
-        - завернуть все остальные компоненты в компоненты
-        - весь контент засунуть в build/content.pug
+        + генерация пунктов в миксине меню из списка
+        + завернуть все остальные компоненты в компоненты
+        + весь контент засунуть в build/content.pug
         - убрать по максимуму повторяющийся код из пагов страниц index и inner (наследование паг)
     */
