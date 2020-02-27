@@ -1,0 +1,11 @@
+@mixin MOBILE() {
+    @media screen and (max-width: $DESKTOP_1600 - 1) {
+        @content;
+    }
+}
+
+@mixin DESKTOP_1600() {
+    @media screen and (min-width: $DESKTOP_1600) {
+        @content;
+    }
+}

@@ -1,0 +1,165 @@
+/**
+ * заголовок контента
+ */
+.CONTENT-TITLE {
+  font-family: $FuturaNewLight;
+  font-size: 48px;
+
+  @include MOBILE() {
+    font-size: 48px;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+
+  @include DESKTOP_1600() {
+    font-size: 48px;
+    letter-spacing: 1.1px;
+    line-height: 1.125;
+  }
+}
+
+/**
+ * параграф текста
+ */
+.CONTENT-TEXT {
+  font-family: $FuturaNewLight;
+  font-size: 18px;
+  ;
+
+  @include MOBILE() {
+    font-size: 18px;
+    line-height: 1.446;
+  }
+
+  @include DESKTOP_1600() {
+    font-size: 18px;
+    ;
+    line-height: 1.5;
+  }
+}
+
+/**
+ * номер телефона компании
+ */
+.HEADER-NUMBER {
+  font-family: $FuturaNewLight;
+  font-size: 32px;
+
+  @include MOBILE() {
+    font-size: 32px;
+    line-height: 0.844;
+  }
+
+  @include DESKTOP_1600() {
+    font-size: 32px;
+    line-height: 0.844;
+  }
+}
+
+/**
+ * шрифт отвечающий за смену языка и пункт меню
+ */
+.HEADER-MENU {
+  font-family: $FuturaNewBook;
+  font-size: 24px;
+
+  @include MOBILE() {
+    font-size: 24px;
+    line-height: 1.125;
+  }
+
+  @include DESKTOP_1600() {
+    font-size: 21px;
+    line-height: 1.286;
+  }
+}
+
+/**
+ * ссылка в меню
+ */
+.NAVBAR-LINK {
+  font-family: $FuturaNewBook;
+  font-size: 31.5px;
+
+  @include MOBILE() {
+    font-size: 31.5px;
+    line-height: 1;
+  }
+
+  @include DESKTOP_1600() {
+    font-size: 31.5px;
+    line-height: 1.143;
+  }
+}
+
+/**
+ * кнопка в меню
+ */
+.NAVBAR-BUTTON {
+  font-family: $FuturaNewLight;
+  font-size: 21px;
+
+  @include MOBILE() {
+    font-size: 21px;
+    line-height: 1;
+  }
+
+  @include DESKTOP_1600() {
+    font-size: 21px;
+    line-height: 1.286;
+  }
+}
+
+/**
+ * кнопка загрузки pdf в футере
+ */
+.FOOTER-LOADER {
+  font-family: $FuturaNewLight;
+  font-size: 14px;
+
+  @include MOBILE() {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  @include DESKTOP_1600() {
+    font-size: 14px;
+    line-height: 1.929;
+  }
+}
+
+/**
+ * информация о компнаии в футере
+ */
+.FOOTER-INFO {
+  font-family: $FuturaNewLight;
+  font-size: 12px;
+
+  @include MOBILE() {
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  @include DESKTOP_1600() {
+    font-size: 12px;
+    line-height: 2.25;
+  }
+}
+
+/**
+ * плэйсхолдер,сообщение об ошибке, вводимый текст
+ */
+.FORM-MAIN {
+  font-family: $FuturaNewLight;
+  font-size: 16px;
+
+  @include MOBILE() {
+    font-size: 16px;
+    line-height: 1.313;
+  }
+
+  @include DESKTOP_1600() {
+    font-size: 12px;
+    line-height: 1.75;
+  }
+}

@@ -1,2 +1,10 @@
+@import "./adaptive";
+@import "./contants";
+@import "../dist/fonts/fonts";
+@import "./fonts";
+//
+
 @import "../src/components/layout/layout.scss";
 @import "../src/components/navbar/navbar.scss";
+@import "../src/components/header/header.scss";
+@import "../src/components/page/page.scss";

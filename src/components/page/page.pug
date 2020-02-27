@@ -2,7 +2,7 @@ mixin page(currentPage)
     .page
         img.page__image(src=currentPage.img)
         .page__content
-            h1.page__title=currentPage.title
+            h1.page__title.page__title_main=currentPage.title
             if currentPage.text
                 each val in currentPage.text
                     +renderText(val)

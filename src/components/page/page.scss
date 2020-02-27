@@ -1,0 +1,18 @@
+.page{
+    
+    &__image{
+        
+    };
+    &__content{
+        
+    };
+    &__title{
+
+    };
+    &__title{
+        @extend .CONTENT-TITLE;
+    };
+    &__text{
+
+    };
+}
