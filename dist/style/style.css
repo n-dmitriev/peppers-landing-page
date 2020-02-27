@@ -46,18 +46,18 @@
 /**
  * параграф текста
  */
-.CONTENT-TEXT {
+.CONTENT-TEXT, .page__text {
   font-family: "Futura New Light";
   font-size: 18px;
 }
 @media screen and (max-width: 1599px) {
-  .CONTENT-TEXT {
+  .CONTENT-TEXT, .page__text {
     font-size: 18px;
     line-height: 1.446;
   }
 }
 @media screen and (min-width: 1600px) {
-  .CONTENT-TEXT {
+  .CONTENT-TEXT, .page__text {
     font-size: 18px;
     line-height: 1.5;
   }
@@ -231,6 +231,21 @@
   outline: 0;
   outline-offset: 0;
   background-color: #f9f8f6;
+}
+
+.page {
+  display: flex;
+}
+.page__image {
+  display: flex;
+}
+.page__text-content {
+  display: flex;
+  flex-direction: row;
+}
+.page__text {
+  display: flex;
+  padding: 20px;
 }
 
 .v-line {
