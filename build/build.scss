@@ -1,3 +1,4 @@
+@import "./normalize";
 @import "./adaptive";
 @import "./contants";
 @import "../dist/fonts/fonts";
@@ -9,7 +10,8 @@
 @import "../src/components/header/header.scss";
 @import "../src/components/page/page.scss";
 @import "../src/components/navbar/navbar.scss";
-@import "../src/components/vLine/vLine.scss";
-@import "../src/components/hLine/hLine.scss";
-@import "../src/components/button/button.scss";
-@import "../src/components/pdfIcon/pdfIcon.scss";
+@import "../src/components/gui/vLine/vLine.scss";
+@import "../src/components/gui/hLine/hLine.scss";
+@import "../src/components/gui/button/button.scss";
+@import "../src/components/gui/pdfIcon/pdfIcon.scss";
+@import "../src/components/gui/pdfButton/pdfButton.scss";

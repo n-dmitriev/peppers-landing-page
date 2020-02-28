@@ -5,8 +5,6 @@
   background-color: #f2f1f1;
   width: 317px;
   padding: 30px;
-  &__menu {
-  }
 
   &__links {
     @extend .NAVBAR-LINK;
@@ -19,12 +17,14 @@
   &__footer {
     position: absolute;
     bottom: 0px;
+    margin: 30px;
+    padding: 20px;
     background-color: #f8f7f7;
-    padding-bottom: 20px;
   }
 
   &__download {
-    @extend .FOOTER-LOADER;
+    display: inline-block;
+    margin-bottom: 30px;
   }
 
   &__about {

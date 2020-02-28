@@ -7,11 +7,11 @@ mixin navbar(currentPage)
                     +renderList(val,currentPage)
             .navbar__container
                 +button("Raffeisen-Online")
-                +button("R-Dealler", "btn_light")
+                +button("R-Dealler","light")
         .navbar__footer
             .navbar__download
                 +pdfIcon()
-                +button('Скачать "услуги PWR"', "btn_download")
+                +pdfButton('Скачать "услуги PWR"')
             .navbar__about="© 2009-2017 АО «Райффайзенбанк»"
     block
 
