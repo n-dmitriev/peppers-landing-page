@@ -6,7 +6,6 @@
   width: 317px;
   padding: 30px;
   &__menu {
-
   }
 
   &__links {
@@ -14,13 +13,14 @@
   }
 
   &__container {
-    @extend .NAVBAR-BUTTON;
+    padding: 30px;
   }
 
   &__footer {
     position: absolute;
     bottom: 0px;
     background-color: #f8f7f7;
+    padding-bottom: 20px;
   }
 
   &__download {

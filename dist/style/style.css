@@ -108,17 +108,17 @@
  */
 .NAVBAR-LINK, .navbar__links {
   font-family: "Futura New Book";
-  font-size: 31.5px;
+  font-size: 27px;
 }
 @media screen and (max-width: 1599px) {
   .NAVBAR-LINK, .navbar__links {
-    font-size: 31.5px;
+    font-size: 27px;
     line-height: 1;
   }
 }
 @media screen and (min-width: 1600px) {
   .NAVBAR-LINK, .navbar__links {
-    font-size: 31.5px;
+    font-size: 27px;
     line-height: 1.143;
   }
 }
@@ -126,18 +126,18 @@
 /**
  * кнопка в меню
  */
-.NAVBAR-BUTTON, .navbar__container {
+.NAVBAR-BUTTON, .btn {
   font-family: "Futura New Light";
   font-size: 21px;
 }
 @media screen and (max-width: 1599px) {
-  .NAVBAR-BUTTON, .navbar__container {
+  .NAVBAR-BUTTON, .btn {
     font-size: 21px;
     line-height: 1;
   }
 }
 @media screen and (min-width: 1600px) {
-  .NAVBAR-BUTTON, .navbar__container {
+  .NAVBAR-BUTTON, .btn {
     font-size: 21px;
     line-height: 1.286;
   }
@@ -224,10 +224,14 @@
   width: 317px;
   padding: 30px;
 }
+.navbar__container {
+  padding: 30px;
+}
 .navbar__footer {
   position: absolute;
   bottom: 0px;
   background-color: #f8f7f7;
+  padding-bottom: 20px;
 }
 .navbar a {
   text-decoration: none;
@@ -302,10 +306,14 @@
   width: 317px;
   padding: 30px;
 }
+.navbar__container {
+  padding: 30px;
+}
 .navbar__footer {
   position: absolute;
   bottom: 0px;
   background-color: #f8f7f7;
+  padding-bottom: 20px;
 }
 .navbar a {
   text-decoration: none;
@@ -345,4 +353,28 @@
   opacity: 0.2;
   width: 62px;
   height: 0;
+}
+
+.btn {
+  background-color: #b3aaaf;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+.btn_light {
+  border-width: 1px;
+  border-color: #b3aaaf;
+  border-style: solid;
+  height: 38px;
+}
+.btn_download {
+  border: none;
+  outline: none;
+  background-color: #f8f7f7;
+}
+
+.pdf-icon {
+  background: url("../images/icon-pdf.png");
+  width: 20px;
+  height: 8px;
 }

@@ -1,2 +1,3 @@
-mixin button(cur-style)
-    button.cur-style
+mixin button(content, curStyle)
+    - curStyle = curStyle || 'btn'
+    button(style=curStyle)=content

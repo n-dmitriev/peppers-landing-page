@@ -1,0 +1,20 @@
+.btn {
+    background-color: rgb(179, 170, 175);
+    height: 40px;
+    border: none; 
+    outline: none;   
+    @extend .NAVBAR-BUTTON;
+    &_light {
+        border-width: 1px;
+        border-color: rgb(179, 170, 175);
+        border-style: solid;
+        height: 38px;
+
+    }
+
+    &_download{
+        border: none;
+        outline: none;
+        background-color: #f8f7f7;
+    }
+}

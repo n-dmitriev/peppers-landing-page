@@ -79,15 +79,15 @@
  */
 .NAVBAR-LINK {
   font-family: $FuturaNewBook;
-  font-size: 31.5px;
+  font-size: 27px;
 
   @include MOBILE() {
-    font-size: 31.5px;
+    font-size: 27px;
     line-height: 1;
   }
 
   @include DESKTOP_1600() {
-    font-size: 31.5px;
+    font-size: 27px;
     line-height: 1.143;
   }
 }

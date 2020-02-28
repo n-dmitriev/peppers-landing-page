@@ -6,12 +6,12 @@ mixin navbar(currentPage)
                   each val in menuItems
                     +renderList(val,currentPage)
             .navbar__container
-                button.btn Raffeisen-Online
-                button.btn_light R-Dealler
+                +button("Raffeisen-Online")
+                +button("R-Dealler", "btn_light")
         .navbar__footer
             .navbar__download
-                .pdf-icon
-                button.btn-download Скачать "услуги PWR"
+                +pdfIcon()
+                +button('Скачать "услуги PWR"', "btn_download")
             .navbar__about="© 2009-2017 АО «Райффайзенбанк»"
     block
 
