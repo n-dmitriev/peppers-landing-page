@@ -106,18 +106,18 @@
 /**
  * ссылка в меню
  */
-.NAVBAR-LINK {
+.NAVBAR-LINK, .navbar__links {
   font-family: "Futura New Book";
   font-size: 31.5px;
 }
 @media screen and (max-width: 1599px) {
-  .NAVBAR-LINK {
+  .NAVBAR-LINK, .navbar__links {
     font-size: 31.5px;
     line-height: 1;
   }
 }
 @media screen and (min-width: 1600px) {
-  .NAVBAR-LINK {
+  .NAVBAR-LINK, .navbar__links {
     font-size: 31.5px;
     line-height: 1.143;
   }
@@ -126,18 +126,18 @@
 /**
  * кнопка в меню
  */
-.NAVBAR-BUTTON {
+.NAVBAR-BUTTON, .navbar__container {
   font-family: "Futura New Light";
   font-size: 21px;
 }
 @media screen and (max-width: 1599px) {
-  .NAVBAR-BUTTON {
+  .NAVBAR-BUTTON, .navbar__container {
     font-size: 21px;
     line-height: 1;
   }
 }
 @media screen and (min-width: 1600px) {
-  .NAVBAR-BUTTON {
+  .NAVBAR-BUTTON, .navbar__container {
     font-size: 21px;
     line-height: 1.286;
   }
@@ -146,18 +146,18 @@
 /**
  * кнопка загрузки pdf в футере
  */
-.FOOTER-LOADER {
+.FOOTER-LOADER, .navbar__download {
   font-family: "Futura New Light";
   font-size: 14px;
 }
 @media screen and (max-width: 1599px) {
-  .FOOTER-LOADER {
+  .FOOTER-LOADER, .navbar__download {
     font-size: 14px;
     line-height: 1;
   }
 }
 @media screen and (min-width: 1600px) {
-  .FOOTER-LOADER {
+  .FOOTER-LOADER, .navbar__download {
     font-size: 14px;
     line-height: 1.929;
   }
@@ -166,18 +166,18 @@
 /**
  * информация о компнаии в футере
  */
-.FOOTER-INFO {
+.FOOTER-INFO, .navbar__about {
   font-family: "Futura New Light";
   font-size: 12px;
 }
 @media screen and (max-width: 1599px) {
-  .FOOTER-INFO {
+  .FOOTER-INFO, .navbar__about {
     font-size: 12px;
     line-height: 1;
   }
 }
 @media screen and (min-width: 1600px) {
-  .FOOTER-INFO {
+  .FOOTER-INFO, .navbar__about {
     font-size: 12px;
     line-height: 2.25;
   }
@@ -208,40 +208,37 @@
   height: 100%;
   background-color: #f9f8f6;
   display: flex;
-  flex-direction: column;
 }
 .layout__main {
-  display: flex;
-  flex-direction: row;
   flex-grow: 2;
 }
 .layout__nav {
-  display: flex;
   flex-grow: 1;
 }
 
 .navbar {
-  /*border-width: 1px;
-  border-color: rgb(124, 127, 130);
+  border-width: 1px;
+  border-color: #f2f1f1;
   border-style: solid;
-  background-color: rgb(109, 91, 102);
-  opacity: 0.051;
-  position: absolute;
+  background-color: #f2f1f1;
   width: 317px;
-  height: 100%;*/
+  padding: 30px;
 }
-.navbar__links {
-  width: 200px;
+.navbar__footer {
+  position: absolute;
+  bottom: 0px;
+  background-color: #f8f7f7;
 }
 .navbar a {
   text-decoration: none;
   color: #4c3440;
+  cursor: pointer;
 }
 .navbar a:visited {
   color: #4c3440;
 }
 .navbar a:hover {
-  color: #4c3440;
+  color: rgba(76, 52, 64, 0.502);
 }
 .navbar a:active {
   color: #4c3440;
@@ -286,7 +283,7 @@
 }
 .page__content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .page__text-content {
   display: flex;
@@ -298,27 +295,28 @@
 }
 
 .navbar {
-  /*border-width: 1px;
-  border-color: rgb(124, 127, 130);
+  border-width: 1px;
+  border-color: #f2f1f1;
   border-style: solid;
-  background-color: rgb(109, 91, 102);
-  opacity: 0.051;
-  position: absolute;
+  background-color: #f2f1f1;
   width: 317px;
-  height: 100%;*/
+  padding: 30px;
 }
-.navbar__links {
-  width: 200px;
+.navbar__footer {
+  position: absolute;
+  bottom: 0px;
+  background-color: #f8f7f7;
 }
 .navbar a {
   text-decoration: none;
   color: #4c3440;
+  cursor: pointer;
 }
 .navbar a:visited {
   color: #4c3440;
 }
 .navbar a:hover {
-  color: #4c3440;
+  color: rgba(76, 52, 64, 0.502);
 }
 .navbar a:active {
   color: #4c3440;
@@ -337,4 +335,14 @@
   top: 71px;
   width: 2px;
   height: 30px;
+}
+
+.hLine {
+  border-width: 1px;
+  border-color: #6d5b66;
+  border-style: solid;
+  background-color: #6c5b65;
+  opacity: 0.2;
+  width: 62px;
+  height: 0;
 }

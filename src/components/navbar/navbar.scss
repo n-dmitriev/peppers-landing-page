@@ -1,45 +1,46 @@
 .navbar {
-  /*border-width: 1px;
-  border-color: rgb(124, 127, 130);
+  border-width: 1px;
+  border-color: #f2f1f1;
   border-style: solid;
-  background-color: rgb(109, 91, 102);
-  opacity: 0.051;
-  position: absolute;
+  background-color: #f2f1f1;
   width: 317px;
-  height: 100%;*/
-
+  padding: 30px;
   &__menu {
 
   }
 
   &__links {
-    width: 200px;
+    @extend .NAVBAR-LINK;
   }
 
   &__container {
-
+    @extend .NAVBAR-BUTTON;
   }
 
   &__footer {
-
+    position: absolute;
+    bottom: 0px;
+    background-color: #f8f7f7;
   }
 
   &__download {
-
+    @extend .FOOTER-LOADER;
   }
 
   &__about {
-
+    @extend .FOOTER-INFO;
   }
 
   & a {
     text-decoration: none;
     color: rgb(76, 52, 64);
+    cursor: pointer;
+
     &:visited {
       color: rgb(76, 52, 64);
     }
     &:hover {
-      color: rgb(76, 52, 64);
+      color: rgba(76, 52, 64, 0.502);
     }
     &:active {
       color: rgb(76, 52, 64);
