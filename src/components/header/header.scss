@@ -1,33 +1,33 @@
 .header {
     display: flex;
     margin: 10px;
+    padding: 40px;
 
     &__logo {
         background: url($IMG-URL+'logo.svg');
         width: 243px;
         height: 79px;
-    };
-
+    }
     &__bar {
         display: flex;
         margin-left: auto;
         flex-direction: row;
-    };
-
+    }
     &__number {
         @extend .HEADER-NUMBER;
-    };
-
+    }
     &__switch-lang {
         @extend .HEADER-MENU;
-        select{
-            display: block;
-            padding: .6em 1.4em .5em .8em;
-            box-sizing: border-box;
+
+        select {
+            padding-top: 5px;
             border: none;
             outline: 0;
             outline-offset: 0;
             background-color: #f9f8f6;
-        };
-    };
-};
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+    }
+}

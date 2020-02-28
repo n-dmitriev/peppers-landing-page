@@ -3,28 +3,26 @@
   border-color: #f2f1f1;
   border-style: solid;
   background-color: #f2f1f1;
-  width: 317px;
-  padding: 30px;
+  padding: 55px;
+  width: 220px;
+
+  &__menu{
+    
+  }
 
   &__links {
     @extend .NAVBAR-LINK;
   }
 
-  &__container {
-    padding: 30px;
-  }
-
   &__footer {
     position: absolute;
-    bottom: 0px;
-    margin: 30px;
-    padding: 20px;
+    bottom:0;
     background-color: #f8f7f7;
+    margin-bottom: 40px;
   }
 
   &__download {
-    display: inline-block;
-    margin-bottom: 30px;
+    padding-bottom: 20px;
   }
 
   &__about {
@@ -53,5 +51,7 @@
 
   & ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 }

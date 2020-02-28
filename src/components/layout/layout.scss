@@ -3,10 +3,5 @@
     height: 100%;
     background-color: #f9f8f6;
     display: flex;
-    &__main{
-        flex-grow: 2;
-    }
-    &__nav{
-        flex-grow: 1;
-    }
+    padding: 20px;
 }

@@ -1,14 +1,14 @@
 .btn {
     
     @extend .NAVBAR-BUTTON;
-
+    display: inline-block;
     background-color: rgb(179, 170, 175);
-    height: 40px;
+    height: auto;
     
     &_light {
         border-width: 1px;
         background-color: white;
         border-style: solid;
-        height: 38px;
+        height: auto;
     }
 }

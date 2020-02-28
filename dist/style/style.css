@@ -448,17 +448,17 @@ template {
  */
 .NAVBAR-LINK, .navbar__links {
   font-family: "Futura New Book";
-  font-size: 27px;
+  font-size: 21px;
 }
 @media screen and (max-width: 1599px) {
   .NAVBAR-LINK, .navbar__links {
-    font-size: 27px;
+    font-size: 21px;
     line-height: 1;
   }
 }
 @media screen and (min-width: 1600px) {
   .NAVBAR-LINK, .navbar__links {
-    font-size: 27px;
+    font-size: 21px;
     line-height: 1.143;
   }
 }
@@ -468,17 +468,17 @@ template {
  */
 .NAVBAR-BUTTON, .btn {
   font-family: "Futura New Light";
-  font-size: 21px;
+  font-size: 18px;
 }
 @media screen and (max-width: 1599px) {
   .NAVBAR-BUTTON, .btn {
-    font-size: 21px;
+    font-size: 18px;
     line-height: 1;
   }
 }
 @media screen and (min-width: 1600px) {
   .NAVBAR-BUTTON, .btn {
-    font-size: 21px;
+    font-size: 18px;
     line-height: 1.286;
   }
 }
@@ -548,12 +548,7 @@ template {
   height: 100%;
   background-color: #f9f8f6;
   display: flex;
-}
-.layout__main {
-  flex-grow: 2;
-}
-.layout__nav {
-  flex-grow: 1;
+  padding: 20px;
 }
 
 .navbar {
@@ -561,22 +556,17 @@ template {
   border-color: #f2f1f1;
   border-style: solid;
   background-color: #f2f1f1;
-  width: 317px;
-  padding: 30px;
-}
-.navbar__container {
-  padding: 30px;
+  padding: 55px;
+  width: 220px;
 }
 .navbar__footer {
   position: absolute;
-  bottom: 0px;
-  margin: 30px;
-  padding: 20px;
+  bottom: 0;
   background-color: #f8f7f7;
+  margin-bottom: 40px;
 }
 .navbar__download {
-  display: inline-block;
-  margin-bottom: 30px;
+  padding-bottom: 20px;
 }
 .navbar a {
   text-decoration: none;
@@ -597,11 +587,14 @@ template {
 }
 .navbar ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
   display: flex;
   margin: 10px;
+  padding: 40px;
 }
 .header__logo {
   background: url("../images/logo.svg");
@@ -614,13 +607,14 @@ template {
   flex-direction: row;
 }
 .header__switch-lang select {
-  display: block;
-  padding: 0.6em 1.4em 0.5em 0.8em;
-  box-sizing: border-box;
+  padding-top: 5px;
   border: none;
   outline: 0;
   outline-offset: 0;
   background-color: #f9f8f6;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .page {
@@ -648,22 +642,17 @@ template {
   border-color: #f2f1f1;
   border-style: solid;
   background-color: #f2f1f1;
-  width: 317px;
-  padding: 30px;
-}
-.navbar__container {
-  padding: 30px;
+  padding: 55px;
+  width: 220px;
 }
 .navbar__footer {
   position: absolute;
-  bottom: 0px;
-  margin: 30px;
-  padding: 20px;
+  bottom: 0;
   background-color: #f8f7f7;
+  margin-bottom: 40px;
 }
 .navbar__download {
-  display: inline-block;
-  margin-bottom: 30px;
+  padding-bottom: 20px;
 }
 .navbar a {
   text-decoration: none;
@@ -684,6 +673,8 @@ template {
 }
 .navbar ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .v-line {
@@ -706,25 +697,29 @@ template {
 }
 
 .btn {
+  display: inline-block;
   background-color: #b3aaaf;
-  height: 40px;
+  height: auto;
 }
 .btn_light {
   border-width: 1px;
   background-color: white;
   border-style: solid;
-  height: 38px;
+  height: auto;
 }
 
 .pdf-icon {
+  display: inline-block;
   background: url("../images/icon-pdf.png");
   width: 40px;
   height: 32px;
 }
 
 .pdf-button {
+  vertical-align: top;
+  display: inline-block;
   background-color: #f8f7f7;
+  border-bottom: 1px dashed #4c3440;
   border: none;
   outline: none;
-  border-bottom: 1px dashed #4c3440;
 }

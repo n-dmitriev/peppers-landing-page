@@ -1,7 +1,9 @@
 .pdf-button{
     @extend .FOOTER-LOADER;
+    vertical-align: top;
+    display: inline-block;
     background-color: #f8f7f7;
+    border-bottom: 1px dashed rgb(76, 52, 64);
     border: none; 
     outline: none;
-    border-bottom: 1px dashed rgb(76, 52, 64);
 }
