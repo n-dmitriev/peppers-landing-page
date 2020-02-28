@@ -1,16 +1,21 @@
 .page{
     display: flex;
     &__image{
-        display: flex;
+        width: 500px;
+        height: 500px;
     }
-    &__text-content{    
+    &__content{
+        display: flex;
+        flex-direction: row;
+    }
+    &__text-content{
         display: flex;
         flex-direction: row;
     };
     &__title{
         @extend .CONTENT-TITLE;
     };
-    &__text{    
+    &__text{
         display: flex;
         padding: 20px;
         @extend .CONTENT-TEXT;

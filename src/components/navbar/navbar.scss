@@ -1,0 +1,56 @@
+.navbar {
+  /*border-width: 1px;
+  border-color: rgb(124, 127, 130);
+  border-style: solid;
+  background-color: rgb(109, 91, 102);
+  opacity: 0.051;
+  position: absolute;
+  width: 317px;
+  height: 100%;*/
+
+  &__menu {
+
+  }
+
+  &__links {
+    width: 200px;
+  }
+
+  &__container {
+
+  }
+
+  &__footer {
+
+  }
+
+  &__download {
+
+  }
+
+  &__about {
+
+  }
+
+  & a {
+    text-decoration: none;
+    color: rgb(76, 52, 64);
+    &:visited {
+      color: rgb(76, 52, 64);
+    }
+    &:hover {
+      color: rgb(76, 52, 64);
+    }
+    &:active {
+      color: rgb(76, 52, 64);
+    }
+  }
+
+  & li {
+    margin: 20px 0;
+  }
+
+  & ul {
+    list-style-type: none;
+  }
+}

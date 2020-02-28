@@ -9,16 +9,17 @@ mixin navbar(currentPage)
                 button.btn Raffeisen-Online
                 button.btn_light R-Dealler
         .navbar__footer
-            .navbar__donwoald
+            .navbar__download
                 .pdf-icon
-                button.btn-donwoald Скачать "услуги PWR"
-            .navbar_about
+                button.btn-download Скачать "услуги PWR"
+            .navbar__about
                 2009-20017
     block
 
 //- Рендерим список страниц
 mixin renderList(val,currentPage)
     -if(val.isSeparator === true)
-        li #[div.h-line]
+        li
+            +hLine()
     -else
         li(class=(val.id==currentPage ? "active-item" : "")) #[a(href=val.href)= val.title]

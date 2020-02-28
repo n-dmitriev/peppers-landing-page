@@ -9,10 +9,9 @@ html
 
     body
         +layout("layout")
-            
-            +header()
-            
-            block content
-                +page(pageContents[currentPage])
-            
-            +navbar("save_and_multiply")
+            .layout__main
+                +header()
+                block content
+                    +page(pageContents[currentPage])
+            .layout__nav
+                +navbar("save_and_multiply")
